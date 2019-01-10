@@ -45,12 +45,12 @@ def find_center_cell(garden, N, M):
         M_index = [int(M/2)]
         center_index = get_center_index(garden, N_index, M_index)
     elif N_type == 'odd' and M_type == 'even':
-        N_index = [int(N/2)-1, int(N/2)]
-        M_index = [int(M/2)]
+        N_index = [int(N/2)]
+        M_index = [int(M/2)-1, int(M/2)]
         center_index = get_center_index(garden, N_index, M_index)
     elif N_type == 'even' and M_type == 'even':
         N_index = [int(N/2)-1, int(N/2)]
-        M_index = [int(M/2)]
+        M_index = [int(M/2)-1, int(M/2)]
         center_index = get_center_index(garden, N_index, M_index)
     else:
         print ("Something is wrong!")
